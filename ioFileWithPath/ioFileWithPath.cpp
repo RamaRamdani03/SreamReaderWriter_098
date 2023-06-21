@@ -32,3 +32,13 @@ int main() {
 
 	// membuka file dalam mode membaca
 	ifstream infile;
+
+	// menunjuk ke sebuah file
+	infile.open(NamaFile, ios::in);
+
+	cout << endl << ">= Membuka dan Membaca file" << endl;
+	// jika file ada maka 
+	if (infile.is_open())
+	{
+		// melakukan perulangan setiap baris
+		while (getline(infile, baris))
